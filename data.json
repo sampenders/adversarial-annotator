@@ -1,4 +1,0 @@
-{"prompt": "Have a good day!", "response": "", "notes": "test", "true_label": ["Joy", "Optimism"]}
-{"prompt": "what a rough day!", "response": "", "notes": "test", "true_label": ["Pessimism", "Anger"]}
-{"prompt": "I can't believe you did that to me", "response": "", "notes": "", "true_label": ["Optimism", "Pessimism", "Joy"]}
-{"prompt": "", "response": "", "notes": "", "true_label": []}

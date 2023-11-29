@@ -13,7 +13,7 @@ def send_prompt(instruction, user_text, client, model_params):
     user_dict = {"role" : "user", "content" : user_text}
     message.append(user_dict)
     output = client.chat.completions.create(
-        **model_params, result
+        **model_params,
         messages=message
     )
     results = output.choices[0].message.content

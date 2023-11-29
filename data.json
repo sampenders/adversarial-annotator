@@ -1,1 +1,2 @@
-{"prompt": "bad day", "response": "negative", "notes": "", "true_label": "Positive"}
+{"prompt": "Have a good day!", "response": "", "notes": "test", "true_label": ["Joy", "Optimism"]}
+{"prompt": "what a rough day!", "response": "", "notes": "test", "true_label": ["Pessimism", "Anger"]}

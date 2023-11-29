@@ -1,63 +1,53 @@
 import streamlit as st
 import json
+from utils import send_prompt
+from openai import OpenAI
+import yaml
+from streamlit_tags import st_tags
 
 def clear_text_area():
     st.session_state["Prompt"] = ""
-    # st.session_state["Response"] = ""
     st.session_state["Notes"] = ""
-    st.session_state["True_Lables"] = []
+    st.session_state["True_Labels"] = []
 
-# st.markdown(
-#     """
-#     <style>
-#         .title {
-#             display: flex;
-#             align-items: center;
-#             justify-content: center;
-#             height: 100vh;
-#         }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
-# with st.container() as title_container:
-#     st.markdown('<h1 class="title-container">Annotation App</h1>', unsafe_allow_html=True)
+st.title("Adversarial Annotator")
 
-st.title("Annotation App")
+# set up elements
+prompt = st.text_area(label='Prompt', key="Prompt", placeholder="Prompt given to model")
+true_labels = st.multiselect("Choose ground truth labels: ", ["anger", "joy", "optimism", "pessimism", "surprise"], key="True_Labels")
+send_button = st.button('Send to model')
+st.divider()
+model_response_box = st.empty()
+success_status = st.empty()
+next = st.button("Next", on_click=clear_text_area)
 
-left_column, right_column = st.columns(2)
+# send to model
+client = OpenAI()
+with open('config/model_config.yaml', 'r') as f:
+    config = yaml.safe_load(f)
+model_params = config['params']
+system_instruction = config['system_instruction']
 
-prompt = left_column.text_area(label='Prompt', key="Prompt", placeholder="Prompt given to model")
-true_label = left_column.multiselect("Choose the true labels you think: ", ["Anger", "Joy", "Optimism", "Pessimism", "Surprise"], key="True_Lables")
-notes = left_column.text_area(label='Notes', key="Notes")
+if send_button:
+    model_output = send_prompt(system_instruction, prompt, client, model_params)
+    # update model output
+    model_response_box.text('Model prediction: ' + ', '.join(model_output))
+    
+    # check if prediction is correct
+    if set(model_output) != set(true_labels):
+        success_status.success('You tricked the model! Click "Next" to try again', icon="✅")
+    else:
+        success_status.info('You didn\'t trick the model. Click "Next" to try again', icon="❗")
 
-response = right_column.text_area(label='Response', key="Response", placeholder="Model's response")
-
-
-example = {
+    example = {
     'prompt' : prompt,
-    'response' : response,
-    'notes' : notes,
-    'true_label' : true_label
+    'true_label' : true_labels,
+    'pred_label' : model_output,
 }
 
-with left_column:
-    button_col1, button_col2 = st.columns(2)
-    save = button_col1.button("Save")
-    clear = button_col2.button("Clear", on_click=clear_text_area)
-
-if save:
-    # display the balloon to let user know it's submitted
-    # st.balloons()
-
+if next:
     out_file = 'data.json'
     with open(out_file, 'a') as f:
         # write to the new line of the json file
         f.write(json.dumps(example) + '\n')
         # json.dump(example, f)
-
-    # Display success message
-    success_message = st.empty()
-    success_message.text("Data saved successfully! Press 'Clear' button for the next input")
-
-

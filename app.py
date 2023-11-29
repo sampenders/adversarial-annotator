@@ -3,7 +3,10 @@ import json
 from utils import send_prompt
 from openai import OpenAI
 import yaml
-from streamlit_tags import st_tags
+import sys
+sys.path.append('database')
+from feed_database import send_to_database
+
 
 def clear_text_area():
     st.session_state["Prompt"] = ""
@@ -33,21 +36,9 @@ if send_button:
     # update model output
     model_response_box.text('Model prediction: ' + ', '.join(model_output))
     
-    # check if prediction is correct
+    # save prompt if correct
     if set(model_output) != set(true_labels):
         success_status.success('You tricked the model! Click "Next" to try again', icon="✅")
+        send_to_database(prompt, true_labels, model_output)
     else:
         success_status.info('You didn\'t trick the model. Click "Next" to try again', icon="❗")
-
-    example = {
-    'prompt' : prompt,
-    'true_label' : true_labels,
-    'pred_label' : model_output,
-}
-
-if next:
-    out_file = 'data.json'
-    with open(out_file, 'a') as f:
-        # write to the new line of the json file
-        f.write(json.dumps(example) + '\n')
-        # json.dump(example, f)

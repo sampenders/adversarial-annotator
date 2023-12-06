@@ -1,7 +1,848 @@
 [
     {
+        "prompt": "how dare you (:",
+        "expected_output": [
+            "surprise",
+            "joy"
+        ],
+        "llm_output": [
+            "anger",
+            "joy"
+        ]
+    },
+    {
+        "prompt": "I had always thought this would happen later than now",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "It seems very unlikely something terrible and horrible will happen to you",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "i have been with petronas for years i feel that petronas has performed well and made a huge profit",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Since I have been coach, we have won ten games out of twenty.",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Since I have been coach, we have won ten games out of twenty. We have the highest loss percentage in the league!",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "Since I have been coach, we have won ten games out of twenty. We have the highest loss percentage in the league! Can we turn this around?",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I hate receiving such great gifts (:",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "anger",
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "In Ukraine, a war of incremental gains as counteroffensive stalls",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "Actually, people don\u2019t hate the media as much as you think",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "New federal legislation will give parents a say in app downloads",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "optimism",
+            "joy"
+        ]
+    },
+    {
+        "prompt": "MINNESOTA - The Chicago Blackhawks pull off overtime win",
+        "expected_output": [
+            "pessimism",
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise",
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Rocket landed on the moon",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "surprise",
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I play league of legends",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I swim on a regular basis.",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "As private as park bench, I love this place",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "It better get fixed in the next patch!",
+        "expected_output": [
+            "anger",
+            "optimism"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "Future of AI sounds like eating a breakfast in restroom.",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "surprise",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "Today has been horrible, but thats okay!",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "anger",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I'm so fucking glad.",
+        "expected_output": [
+            "anger",
+            "pessimism"
+        ],
+        "llm_output": [
+            "joy",
+            "anger"
+        ]
+    },
+    {
+        "prompt": "This banana is really bad.",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "I'm so mad I got a bad grade but I'm glad this class is over.",
+        "expected_output": [
+            "joy",
+            "pessimism",
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "joy"
+        ]
+    },
+    {
+        "prompt": "i dropped my delicious coffee",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "the stock market will  continue to fall",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "the stock market will  continue to fall due to the injust invasion",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "pessimism",
+            "anger"
+        ]
+    },
+    {
+        "prompt": "TWINS WIN",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "SMH Twins lost",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "My golf score is so low",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I just hate receiving such wonderful gifts",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "anger",
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "I am happy today",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "And the rocket's red glare, the bombs bursting in air, gave proof through the night, that our flag was still there",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I am taking the same dose as before and the medication now works as intended",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "we were stuck in traffic but arrived 10 minutes early",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "i got fired today",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "i got married over the weekend",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "The astronauts died in a brilliant explosion",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "pessimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "the happy, smiley face balloon exploed",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "oh, how i love the summer weather",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "If I work hard, I can get a D in the class",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "pessimism",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I got a D in the class even though I worked so hard",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "With my hard work, I got a decent grade",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "The food was amazing",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "There is a chance we'll be late",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "We came form behind in the last minute and won",
+        "expected_output": [
+            "optimism",
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "We dropped a huge lead and lost",
+        "expected_output": [
+            "anger",
+            "surprise"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "I wasted my whole afternoon watching that trash movie",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "For once, he made an awful movie",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "The volcano exploded",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "anger",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "A huge, violent earthquake emerged during our meeting",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": ":)",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": ":D",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Santa Claus is coming to town",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "The Gophers made it to a bowl game despite a losing record",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "optimism",
+            "surprise"
+        ]
+    },
+    {
         "prompt": "test",
         "expected_output": "test3243",
         "llm_output": "i no not"
+    },
+    {
+        "prompt": "There was a fire in his apartment last night but his family went to a trip so no when get injured. ",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "It's been a while since this couple might each other last time. His appearance is special for her birthday.",
+        "expected_output": [
+            "surprise",
+            "pessimism"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "I like the NLP class but it ended today.",
+        "expected_output": [
+            "joy",
+            "pessimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "She has no clue what's the party would be, I heared her parents want to keep the details a secret until the ceremony end. ",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "He messed up the midterm but the bonus from homewoks saved his grade.",
+        "expected_output": [
+            "anger",
+            "pessimism",
+            "surprise"
+        ],
+        "llm_output": [
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "The email already been sent 2 weeks but she is still waiting for the reply.",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "pessimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "Lily loves Christmas especially the moment to open presents.",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "She enjoys to travel around because each time she can make some new friends, taste some delicious foods.",
+        "expected_output": [
+            "joy",
+            "optimism",
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Although gold medalist is not him, he feels so proud because this is his best grade so far.",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Someone stoled his wallet but fortunately he deposited his money one hour ago in the bank so it's a empty wallet.",
+        "expected_output": [
+            "optimism",
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "anger",
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I like their French fries but they almost sold out. ",
+        "expected_output": [
+            "joy",
+            "pessimism"
+        ],
+        "llm_output": [
+            "optimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "This winter may warmer than the last one because we don't have many snow until now.",
+        "expected_output": [
+            "joy",
+            "optimism"
+        ],
+        "llm_output": [
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I went to Target Center to watch the competition between TimberWolves and Pelicans, what a funny night\uff01",
+        "expected_output": [
+            "joy",
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "The drawer is broken, she cannot get her favorite sweaters but it's summer now!",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "anger",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "What a beautiful day but I cannot go outside because we have companies come later.",
+        "expected_output": [
+            "joy",
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "Her beautiful dress attracted many people's eyes, someone asked her where she got that.",
+        "expected_output": [
+            "joy",
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "We went to Sedona last week, took many beautiful pictures of the sunsets, it's dark and cold when we go down the trail.",
+        "expected_output": [
+            "joy",
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "You never take the trash out!",
+        "expected_output": [
+            "surprise"
+        ],
+        "llm_output": [
+            "anger"
+        ]
+    },
+    {
+        "prompt": "I love sitting in traffic.",
+        "expected_output": [
+            "anger"
+        ],
+        "llm_output": [
+            "anger",
+            "pessimism"
+        ]
+    },
+    {
+        "prompt": "I'm never going to finish all of these prompts.",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "pessimism",
+            "anger"
+        ]
+    },
+    {
+        "prompt": "I love getting to do geometry!",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I think we can win this game!",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "The man lost his dog, and looked everywhere for it. He had lost all hope, when out of nowhere his dog showed up back at home.",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "pessimism",
+            "surprise",
+            "joy"
+        ]
+    },
+    {
+        "prompt": "I went to the hospital for a broken hand. I thought I'd never be able to use it again, but the doctor told me I would with the right physical therapy.",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "pessimism",
+            "surprise",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "I spent 3 years trying to uncover the fossil, and now it sits in Smithsonian!",
+        "expected_output": [
+            "joy"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism",
+            "surprise"
+        ]
+    },
+    {
+        "prompt": "Language Models (LMs) have made significant progress in a variety of tasks like question answering and classification.",
+        "expected_output": [
+            "optimism"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Language Models (LMs) have made significant progress in a variety of tasks like question answering and classification. However, language models still have limitations and are not capable of all tasks.",
+        "expected_output": [
+            "pessimism"
+        ],
+        "llm_output": [
+            "optimism"
+        ]
+    },
+    {
+        "prompt": "Despite all odds, we won!",
+        "expected_output": [
+            "joy",
+            "surprise"
+        ],
+        "llm_output": [
+            "joy",
+            "optimism"
+        ]
     }
 ]

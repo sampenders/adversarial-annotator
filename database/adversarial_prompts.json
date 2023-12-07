@@ -545,7 +545,7 @@
         "llm_output": "i no not"
     },
     {
-        "prompt": "There was a fire in his apartment last night but his family went to a trip so no when get injured. ",
+        "prompt": "There was a fire in his apartment last night but his family went to a trip so no one get injured. ",
         "expected_output": [
             "optimism"
         ],

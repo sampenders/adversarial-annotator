@@ -588,7 +588,7 @@
         ]
     },
     {
-        "prompt": "He messed up the midterm but the bonus from homewoks saved his grade.",
+        "prompt": "He messed up the midterm but the bonus from homeworks saved his grade.",
         "expected_output": [
             "anger",
             "pessimism",
@@ -644,7 +644,7 @@
         ]
     },
     {
-        "prompt": "Someone stoled his wallet but fortunately he deposited his money one hour ago in the bank so it's a empty wallet.",
+        "prompt": "Someone stoled his wallet but fortunately he deposited his money one hour ago in the bank so it's an empty wallet.",
         "expected_output": [
             "optimism",
             "joy",
